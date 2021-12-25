@@ -1,5 +1,5 @@
-- id: req-lock
-  name: Request Lock Hook
+- id: secret-file
+  name: Secret File Checker
   description: Yell if the specified file is included in the commit
   entry: run-hook.sh
   language: script

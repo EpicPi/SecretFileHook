@@ -27,7 +27,7 @@ NC='\033[0m' # No Color
 for file in ${POSITIONAL[@]}; do
     FILE_NAME=$(awk -F'/' '{print $(NF)}' <<< $file)
     if [ $FILE_NAME == $SECRET ]; then
-        printf "${RED}$SECRET file found in commit. This is a secret file that should nto be commited. Please remove. \n${NC}"
+        printf "${RED}$SECRET file found in commit. This is a secret file that should not be commited. Please remove. \n${NC}"
         exit 1
     fi
 done
